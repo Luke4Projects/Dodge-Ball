@@ -1,0 +1,103 @@
+<h1 id="showScore">Score: 0</h1>
+
+<h1 id="title">Dodge Ball</h1>
+
+<h1 id="deathText">You Died</h1>
+<h2 id="showFinalScore">Score: 0</h2>
+
+<button id="backToMenu" onclick="backToMenu();">Back To Main Menu</button>
+
+<button id="playButton" onclick="play();">Play</button>
+
+<canvas id="canv" width=800 height=600></canvas>
+
+<img id="ballImg" src="data/ball.png">
+<img id="playerImg" src="data/player.png">
+
+<script src="main.js"></script>
+
+<style>
+
+    #ballImg {
+        display: none;
+    }
+    #playerImg {
+        display: none;
+    }
+    #showScore {
+        position: absolute;
+        font-family: "Comic Sans MS";
+        left: 610px;
+        top: -20px;
+        font-size: 40px;
+        color: lightyellow;
+    }
+    #title {
+        position: absolute;
+        font-family: "Comic Sans MS";
+        left: 272px;
+        color: lightyellow;
+        font-size: 50px;
+        width: 255px;
+    }
+    #playButton {
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        border: none;
+        background-color: lightgreen;
+        left: 250;
+        top: 180px;
+        font-family: "Comic Sans MS";
+        font-size: 30px;
+        transition-duration: 0.2s;
+    }
+    #playButton:hover {
+        width: 310px;
+        height: 60px;
+        background-color: lightblue;
+        font-size: 35px;
+        left: 245;
+        top: 175;
+    }
+    #deathText {
+        position: absolute;
+        font-family: "Comic Sans MS";
+        left: 293px;
+        color: red;
+        font-size: 50px;
+        width: 214px;
+        display: none;
+    }
+    #backToMenu {
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        border: none;
+        background-color: lightgreen;
+        left: 250;
+        top: 180px;
+        font-family: "Comic Sans MS";
+        font-size: 30px;
+        transition-duration: 0.2s;
+        display: none;
+    }
+    #backToMenu:hover {
+        width: 310px;
+        height: 60px;
+        background-color: lightblue;
+        font-size: 32px;
+        left: 245;
+        top: 175;
+    }
+    #showFinalScore {
+        position: absolute;
+        font-family: "Comic Sans MS";
+        left: 347px;
+        color: red;
+        font-size: 25px;
+        display: none;
+        top: 100px;
+    }
+
+</style>
